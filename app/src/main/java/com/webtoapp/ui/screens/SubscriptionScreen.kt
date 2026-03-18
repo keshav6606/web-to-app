@@ -273,7 +273,7 @@ fun SubscriptionScreen(
                             tierName = "Pro",
                             price = price,
                             period = "/月",
-                            gradient = listOf(Color(0xFF667EEA), Color(0xFF764BA2)),
+                            gradient = listOf(Color(0xFF42A5F5), Color(0xFF1E88E5)),
                             features = proFeatures(),
                             isCurrent = isCurrentPro,
                             isDowngrade = isDowngrade,
@@ -288,7 +288,7 @@ fun SubscriptionScreen(
                             tierName = "Pro",
                             price = price,
                             period = "/年",
-                            gradient = listOf(Color(0xFF667EEA), Color(0xFF764BA2)),
+                            gradient = listOf(Color(0xFF42A5F5), Color(0xFF1E88E5)),
                             features = proFeatures(),
                             isCurrent = isCurrentPro,
                             isDowngrade = isDowngrade,
@@ -301,7 +301,7 @@ fun SubscriptionScreen(
                             tierName = "Pro",
                             price = "$99",
                             period = " 一次性",
-                            gradient = listOf(Color(0xFF667EEA), Color(0xFF764BA2)),
+                            gradient = listOf(Color(0xFF42A5F5), Color(0xFF1E88E5)),
                             features = proFeatures() + listOf(
                                 FeatureItem(Icons.Outlined.AllInclusive, "永不过期", "一次购买，终身使用")
                             ),
