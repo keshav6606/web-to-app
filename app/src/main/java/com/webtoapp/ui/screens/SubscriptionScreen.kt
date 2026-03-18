@@ -80,6 +80,13 @@ fun SubscriptionScreen(
     val currentSub by billingManager.currentSubscription.collectAsStateWithLifecycle()
     val authState by authViewModel.authState.collectAsStateWithLifecycle()
 
+    // 确保 Billing 已连接（如果 Application 预初始化失败则在此重试）
+    LaunchedEffect(Unit) {
+        if (!isConnected) {
+            billingManager.connect()
+        }
+    }
+
     // 从用户登录信息推断当前套餐
     val userTier = remember(authState) {
         when (val state = authState) {
